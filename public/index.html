@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Məhsul Siyahısı</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="firebaseConfig.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Məhsul Siyahısı</h1>
+        <input type="text" id="searchBox" placeholder="Məhsul axtar..." />
+        <button onclick="location.href='add-product.html'">Məhsul Əlavə Et</button>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Məhsul Adı</th>
+                    <th>Təchizatçı</th>
+                    <th>Qiymət</th>
+                </tr>
+            </thead>
+            <tbody id="productList"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
